@@ -181,6 +181,11 @@ android {
     compileSdkVersion cdvCompileSdkVersion
     buildToolsVersion cdvBuildToolsVersion
 
+    lintOptions {
+        abortOnError false
+    }
+
+
     if (Boolean.valueOf(cdvBuildMultipleApks)) {
         productFlavors {
             armv7 {
